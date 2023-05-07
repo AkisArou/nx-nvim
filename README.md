@@ -6,6 +6,7 @@ lib-2.tsx imports lib-1.tsx.
 LSP find references do not work!
 
 - tsc --showConfig at ROOT
+```json
 {
     "compilerOptions": {
         "rootDir": "./",
@@ -52,7 +53,9 @@ LSP find references do not work!
         "tmp"
     ]
 }
+```
 
+```json
 - tsc --showConfig at lib-1
   {
     "compilerOptions": {
@@ -96,8 +99,10 @@ LSP find references do not work!
         "../../tmp"
     ]
 }
+```
 
 - tsc --showConfig at lib-2
+```json
   {
     "compilerOptions": {
         "rootDir": "../..",
@@ -140,3 +145,4 @@ LSP find references do not work!
         "../../tmp"
     ]
 }
+```
