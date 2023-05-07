@@ -55,8 +55,8 @@ LSP find references do not work!
 }
 ```
 
-```json
 - tsc --showConfig at lib-1
+```json
   {
     "compilerOptions": {
         "rootDir": "../..",
