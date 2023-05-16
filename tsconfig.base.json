@@ -17,7 +17,22 @@
     "paths": {
       "@nx-nvim/lib-1": ["libs/lib-1/src/index.ts"],
       "@nx-nvim/lib-2": ["libs/lib-2/src/index.ts"]
-    }
+    },
+     "plugins": [
+      {
+        "name": "@monodon/typescript-nx-imports-plugin",
+        "externalFiles": [
+          {
+            "mainFile": "/home/akisarou/nx-nvim/libs/lib-1/src/index.ts",
+            "directory": "/home/akisarou/nx-nvim/libs/lib-1"
+          },
+          {
+            "mainFile": "/home/akisarou/nx-nvim/libs/lib-2/src/index.ts",
+            "directory": "/home/akisarou/nx-nvim/libs/lib-2"
+          }
+        ]
+      }
+    ]
   },
   "exclude": ["node_modules", "tmp"]
 }
