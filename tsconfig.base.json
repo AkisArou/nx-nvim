@@ -18,7 +18,7 @@
       "@nx-nvim/lib-1": ["libs/lib-1/src/index.ts"],
       "@nx-nvim/lib-2": ["libs/lib-2/src/index.ts"]
     },
-     "plugins": [
+    "plugins": [
       {
         "name": "@monodon/typescript-nx-imports-plugin",
         "externalFiles": [
